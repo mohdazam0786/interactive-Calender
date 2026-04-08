@@ -61,7 +61,7 @@ src/
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/wall-calendar.git
+git clone https://github.com/mohdazam0786/wall-calendar.git
 cd wall-calendar
 
 # 2. Install dependencies
