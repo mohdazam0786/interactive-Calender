@@ -107,8 +107,8 @@ npm start
 
 ## 📦 Tech Stack
 
-- [Next.js 14](https://nextjs.org/) (App Router)
-- [React 18](https://react.dev/)
+- [Next.js 16](https://nextjs.org/) (App Router)
+- [React 19](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - CSS Modules
 - HTML5 Canvas API
