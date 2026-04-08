@@ -1,0 +1,89 @@
+.cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--ink-2);
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.12s, color 0.12s;
+}
+.cell:hover {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+.empty {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper-4);
+  font-size: 12px;
+  pointer-events: none;
+}
+.num {
+  position: relative;
+  z-index: 1;
+  line-height: 1;
+}
+.today .num {
+  font-weight: 600;
+  color: var(--ink);
+}
+.today::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.sat { color: var(--accent); }
+.sun { color: #e53; }
+
+.inRange {
+  background: var(--range-bg);
+  border-radius: 0;
+  color: var(--accent-dark);
+}
+.inRange:hover { background: var(--range-bg); }
+.rowStart { border-radius: 0; }
+.rowEnd   { border-radius: 0; }
+
+.rangeStart {
+  background: var(--accent) !important;
+  color: #fff !important;
+  border-radius: 50% 0 0 50%;
+}
+.rangeEnd {
+  background: var(--accent-dark) !important;
+  color: #fff !important;
+  border-radius: 0 50% 50% 0;
+}
+.single {
+  border-radius: 50% !important;
+}
+
+.noteDot {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.65;
+  z-index: 2;
+}
+.rangeStart .noteDot,
+.rangeEnd   .noteDot {
+  background: rgba(255,255,255,0.85);
+  opacity: 1;
+}

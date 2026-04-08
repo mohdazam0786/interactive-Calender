@@ -1,0 +1,28 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  margin-bottom: 4px;
+}
+.wd {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 0;
+  color: var(--ink-3);
+}
+.sat { color: var(--accent); }
+.sun { color: #e53; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}

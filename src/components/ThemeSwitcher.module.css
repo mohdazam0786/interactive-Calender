@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  gap: 6px;
+  padding: 10px 20px 2px;
+  flex-wrap: wrap;
+}
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--paper-3);
+  background: var(--paper);
+  color: var(--ink-3);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  transition: all 0.18s;
+}
+.chip:hover:not(.active) {
+  border-color: var(--ink-3);
+  color: var(--ink);
+}
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.active {
+  font-weight: 500;
+}
